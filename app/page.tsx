@@ -6,7 +6,7 @@ import Snowfall from "react-snowfall";
 export default function Home() {
   const [isCorrect, setIsCorrect] = useState<boolean>(false);
 
-  async function checkPassword(e:any) {
+  async function checkPassword(e:React.ChangeEvent<HTMLInputElement>) {
     const userInput = e.target.value;
     const correctPassword = process.env.NEXT_PUBLIC_PASSWORD
 
