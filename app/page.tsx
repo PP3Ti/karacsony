@@ -9,7 +9,6 @@ export default function Home() {
   async function checkPassword(e:React.ChangeEvent<HTMLInputElement>) {
     const userInput = e.target.value;
     const correctPassword = process.env.NEXT_PUBLIC_PASSWORD
-    console.log(process.env.NEXT_PUBLIC_PASSWORD)
 
     if (userInput === correctPassword) {
       console.log('bingo')
