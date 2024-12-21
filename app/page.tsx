@@ -25,7 +25,6 @@ export default function Home() {
       <main className="flex flex-col gap-8 pb-8 items-center">
         <h1 className="text-2xl md:text-4xl font-bold whitespace-nowrap">Tudod a jelszót?</h1>
         <Input type="password" onInput={checkPassword}/>
-
         {isCorrect ? (
           <button className="px-8 py-2 border border-white ">
             <a href="/berlet.pdf" download="berlet.pdf">Ajándék letöltése</a>  
